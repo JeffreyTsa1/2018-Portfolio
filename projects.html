@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/clh8plg.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <!-- CSS reset -->
+    <!-- Resource style -->
+    <!-- Modernizr -->
+    <style>
+    </style>
+    <title>Jeffrey Tsai || Projects</title>
+</head>
+<!-- Insanely nice background color... #fffbed -->
+
+<body>
+    <section class="projects_index">
+        <div class="nav">
+        <a href="index.html"><object type="image/svg+xml" data="logoBlack.svg" id="logo">
+            J <!-- fallback for lack of SVG Support -->
+        </object></a>
+        <a href="" id="work"> Work</a>
+        <a href="jeffrey.my.tsai@gmail.com" id="contact">Contact</a>
+        <a href="resume.pdf" id="resume">Resumé</a>
+    </div>
+        <h2 id="ptxt"> Projects </h2>
+        <img src="HourGlass.png" id="hgprv" />
+        <img src="treetab.png" id="ttmprv" />
+        <img src="twitterprv.png" id="pevprv" />
+        <div id="pContainer">
+            <div id="hg" class="list">
+                <span class = "index_link" id="hgtxt"> Hourglass</span>
+            </div>
+            <div id="ttm" class="list">
+                <span class = "index_link" id="ttmtxt"> Tree Tab Manager</span>
+            </div>
+            <div id="pev" class="list">
+                <span class = "index_link" id="pevtxt"> 2016 Election Visualization</span>
+            </div>
+            <div id="aa" class="list">
+                <!-- <span class = "index_link" id="aatxt"> IB CS Sentiment Analysis (Coming Soon)</span> -->
+                <span class = "index_link" id="aatxt"> Coming Soon</span>
+            </div>
+        </div>
+        <div id="sDown"> ▿ </div>
+    </section>
+    <section id="hourglass" class="project">
+        <div id="text">
+            <div class="mini-section">
+                <h3>Introduction</h3>
+                <p>
+                    Hourglass was the project I worked on with my team for CS465 (User Interface and Design). The main goal of the project was to demonstrate that we, as a team, could utilize good design techniques that we had learned in the class to design a.Our team originally had different intentions for Hourglass, but due to restrictions with time and resources, we decided to focus on what we were meant to accomplish as a goal.
+                </p>
+            </div>
+            <!-- <h3>Introduction</h3>
+        <p>
+            Hourglass was the project I worked on with my team for CS465, user interface design. Our team originally had different intentions for Hourglasss, but due to time and resource restrictions, we decided to focus on what mattered. The main focus of the project was to demonstrate that we, as a team, could utilize good design techniques that we had learned in the class.
+        </p> -->
+            <div class="mini-section">
+                <h3>My role</h3>
+                <p>
+                    I accomplished a few things from my role in this project. First off, I was tasked with designing the main visualization page. The data is requested from our API and then visually graphed through d3. To create the three separate sections of the graph, I built three graphs in total. The first graph requests the user’s google calendar data and is located at the very top. The third day displays the user’s top 10 most visited sites in that day and plots out all the visits that the user may have in a day’s time. The second graph aggregates the user’s productive/unproductive time measurements throughout the day.
+                </p>
+                <p>
+                    For extra credit opportunities, we had to implement a few features and functionalities. The first one was to make the entire website responsive. To accomplish this on the main visualization page, I utilized media queries and allowed the user to scroll left and right so they could still view the visualization under a smaller resolution width. Other styling changes were implemented so that the settings, home, setup, and distraction pages work under different resolutions.
+                </p>
+            </div>
+            <div class="mini-section">
+                <h3>What I learned</h3>
+                <p>
+                    The project allowed me to practice new design techniques that I recently learned, even though I did not have a big design role in the project. My role was mainly developing on the front-end side of the project since our team had prototyped a design together that we thought would fit our project well. It had been a while since I was able to focus more on design over other aspects, and I think it especially helped me gain a different perspective for the design thought process. I was able to observe how my teammates solved design issues and I was able to see things from a different point of view. It was very important for me that I took more of a observational role in terms of design for this project. It allowed me to rethink my own techniques, and I took away a lot from working with them that will allow me to further improve in my own work in the future.
+                    I think, however, my biggest takeaway from this project was definitely working with a larger group to design, prototype, research, and implement an idea. I've worked on many projects in the past, but never had I planned out something in such detail. We started out by trying to figure out the problem we were trying to solve. We then conducted user studies to fully understand things that we could improve on. After reviewing all the feedback that we received, we began designing a low-fidelity prototype. We conducted user research once again and made more revisions before beginning our implementation of our functional prototype. After our functional prototype was complete, we conducted field studies and empirical studies to receive feedback, and then we made revisions to our final revised functional prototype for submission. It was a long process but I really think our prototype was solid due to all of the testing and planning that we did.
+                </p>
+            </div>
+            <div class="mini-section">
+                <h3>Future Contributions</h3>
+                <p>
+                    Though I believe we did a good job, I believe that there is still a lot of improvements that can be made. Certain parts of our design be further improved. Due to time constraints, we understood and accepted from the early stages of the project that we wouldn't be able to fully build out the prototype that we wanted and dreamt of. It is, however, a project I am still proud of, and a project that I would definitely revisit in the future.
+                </p>
+                <p> Our project is currently live
+                    <a href="https://hourglass-api.herokuapp.com/index.html">  here </a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="treetab" class="project">
+    </section>
+    <section id="twitter_vis" class="project">
+    </section>
+    <section id="ibsentiment" class="project">
+    </section>
+    <div id="toTop">Want to check out the next project?</div>
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/projects.js"></script> <!-- Resource jQuery -->
+</body>
+
+</html>
