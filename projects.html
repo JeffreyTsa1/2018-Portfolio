@@ -21,14 +21,15 @@
 <body>
     <section class="projects_index">
         <div class="nav">
-        <a href="index.html"><object type="image/svg+xml" data="logoBlack.svg" id="logo">
-            J <!-- fallback for lack of SVG Support -->
-        </object></a>
-        <a href="" id="work"> Work</a>
-        <a href="jeffrey.my.tsai@gmail.com" id="contact">Contact</a>
-        <a href="resume.pdf" id="resume">Resumé</a>
-    </div>
-        <h2 id="ptxt"> Projects </h2>
+            <a href="index.html" id="logo">Jeffrey <span class="txtAccent">Tsai</a>
+            <a href="" id="work"> Work</a>
+            <a href="mailto:hello@jeffreytsai.com" id="contact">Contact</a>
+            <a href="resume.pdf" id="resume">Resumé</a>
+        </div>
+        <div id="project_text_container">
+            <h2 id="ptxt"> Projects </h2>
+            <h2 id="close"> X </h2>
+        </div>
         <img src="HourGlass.png" id="hgprv" />
         <img src="treetab.png" id="ttmprv" />
         <img src="twitterprv.png" id="pevprv" />
@@ -50,7 +51,7 @@
         <div id="sDown"> ▿ </div>
     </section>
     <section id="hourglass" class="project">
-        <div id="text">
+        <div class="sContainer">
             <div class="mini-section">
                 <h3>Introduction</h3>
                 <p>
@@ -66,10 +67,19 @@
                 <p>
                     I accomplished a few things from my role in this project. First off, I was tasked with designing the main visualization page. The data is requested from our API and then visually graphed through d3. To create the three separate sections of the graph, I built three graphs in total. The first graph requests the user’s google calendar data and is located at the very top. The third day displays the user’s top 10 most visited sites in that day and plots out all the visits that the user may have in a day’s time. The second graph aggregates the user’s productive/unproductive time measurements throughout the day.
                 </p>
+                <div class="photo-showcase">
+                    <img src="HourGlass Design.png"  />
+                    <h6>My design prototype for the Distractions page. </h6>
+                </div>
                 <p>
                     For extra credit opportunities, we had to implement a few features and functionalities. The first one was to make the entire website responsive. To accomplish this on the main visualization page, I utilized media queries and allowed the user to scroll left and right so they could still view the visualization under a smaller resolution width. Other styling changes were implemented so that the settings, home, setup, and distraction pages work under different resolutions.
                 </p>
             </div>
+            <div class="photo-showcase">
+                <img src="photo1.png"  />
+                <h6>This is a placeholder photo. </h6>
+            </div>
+            <br class="photo-bottom-padding"></br>
             <div class="mini-section">
                 <h3>What I learned</h3>
                 <p>
@@ -87,14 +97,53 @@
                 </p>
             </div>
         </div>
+        <div id="toTop">Want to check out the next project?</div>
     </section>
+
+
     <section id="treetab" class="project">
+        <div class="sContainer">
+            <!-- Tools Used: Node.JS, Javascript, HTML/CSS3 -->
+            <div class="mini-section">
+                <h3>Introduction</h3>
+                <p>
+                    The treetabmanager is a group project that SIGCHI worked on. The treetabmanaer allowed us to track a users web browsing habits. Through further development, we realized that our visualization could provide extra information about a users productivity on the internet.
+                </p>
+                <p>
+                    The treetabmanager keeps track of all of the web pages that a user may access or open during their browsing session on chrome. It then maps the browsing pattern in a tree. It allows the user to see “where” they originally started and how the user got to the page they wanted to.
+                </p>
+            </div>
+            <div class="mini-section">
+                <h3>Contributions</h3>
+                <p>
+                    The original treetabmanager was a project under development by me and Andrew Kuznetsov. I worked mainly on the frontend.
+                </p>
+            </div>
+            <div class="mini-section">
+                <h3>Takeaways</h3>
+                <p>
+                    Under the leadership of our chair, I learned a lot about integrating the frontend and backend.
+                </p>
+            </div>
+            <div class="mini-section">
+                <h3>Future Contributions</h3>
+                <p>I always wanted to see this project get further along, but after our current stage, our group decided to leave it as is and
+                </p>
+            </div>
+        </div>
+        <div id="toTop">Want to check out the next project?</div>
     </section>
+    
+
     <section id="twitter_vis" class="project">
+        <div id="toTop">Want to check out the next project?</div>
     </section>
+
+
+
     <section id="ibsentiment" class="project">
+        <div id="toTop">Want to check out the next project?</div>
     </section>
-    <div id="toTop">Want to check out the next project?</div>
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/projects.js"></script> <!-- Resource jQuery -->
 </body>

@@ -6,6 +6,10 @@
     transition: all 0.2s ease-in-out;
 }
 
+#project_text_container h2 {
+    transition: all 0.35s ease-in-out !important;
+}
+
 #pContainer {
     padding-bottom: 40px;
      position: absolute;
@@ -31,20 +35,37 @@
 
 .project {
     display:none;
-
+    background-color: #fff;
+    padding:100px;
 }
 
 .mini-section {
-    padding-top:20px;
-    padding-bottom:20px ;
+    padding-top:25px;
+    padding-bottom:25px;
 }
 
-#hourglass {
-    background-color: #fff;
-    padding: 100px;
+
+.photo-showcase {
+    /*background-color: #fdf5e6;*/
+    padding-top:25px;
+    padding-bottom: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
 }
 
-#text {
+.photo-showcase img {
+    padding:15px;
+        border-style: solid;
+    border-width: 2px;
+    border-color: #fdf5e6;
+}
+
+.photo-bottom-padding {
+    height: 25px;
+}
+
+
+.sContainer {
     max-width: 900px;
     margin: 0 auto;
 }
@@ -74,8 +95,18 @@
     position: absolute;
     left: 50%;
     opacity: 0;
+    transition: all 0.2s ease-in-out;
     -webkit-transform: translateX(-50%);
-    transform: translateX(-50%)
+    transform: translateX(-50%);
+    animation-name: yes;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes yes {
+  0% {transform: translateY(0px);}
+  50% {transform: translateY(5px);}
+  100% {transform: translateY(0px);}
 }
 
 #toTop {
@@ -86,6 +117,7 @@
     color: #010b13;
     font-family: soleil, sans-serif;
     font-weight: 600;
+    cursor: pointer;
     font-size: 24px;
     font-style: normal;
     transition: all 0.2s ease-in-out;
@@ -93,10 +125,7 @@
 }
 
 
-.projects_index img{
-    z-index: 1;
 
-}
 
 /*#hg, #ttm, #pev, #aa {
   transition: all 0.2s ease-in-out;
@@ -114,10 +143,14 @@ a {
     text-decoration: none;
 }
 
+
+
 h3 {
-    font-size: 28px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin:0px;
+    line-height: 38px;
+    font-size: 34px;
+    padding-top: 20px;
+    padding-bottom: 0px;
     padding-left: 50px;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -136,7 +169,6 @@ h3 {
     text-shadow: none;
 }
 
-
 .projects_index img{
     max-width: 800px;
     position: absolute;
@@ -144,29 +176,59 @@ h3 {
     opacity: 0;
     display: block;
     right:50px;
-   top: 50%;
-   max-height: 78vh;
-   margin-top: -38vh; /* Half the height */
+    top: 50%;
+    max-height: 78vh;
+    margin-top: -38vh; /* Half the height */
 }
 
-#ttprv {
-    opacity: 0;
+.photo-showcase img {
+    max-width:100%;
+    background-size: cover;
+}
+
+.photo-showcase h6 {
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'soleil','sans-serif';
+}
+
+.mini-section p {
 }
 
 p {
     font-family: skolar-latin, serif;
-font-weight: 300;
-font-style: normal;
+    font-weight: 300;
+    font-style: normal;
     color: #010b13;
-    line-height: 1.8em;
+    line-height: 34px;
     font-size: 18px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
 h2 {
-    padding-top: 5vh;
+    text-align: center;
     color:#292927;
+    position: absolute;
+}
+
+#close{
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    cursor: pointer;
+    margin:0 auto;
+    transform: translateY(55px);
+}
+
+#project_text_container {
+    top: 30px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width:300px;
+    height:60px;
 }
 
 /* -------------------- jQuery nonsense ------------ */
