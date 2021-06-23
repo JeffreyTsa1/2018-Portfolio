@@ -7,23 +7,6 @@
     <link rel="stylesheet" href="https://use.typekit.net/clh8plg.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <!--  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="favicon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff"> -->
     <title>Jeffrey Tsai || Home</title>
 </head>
 
@@ -31,21 +14,28 @@
     <section class="intro">
         <div>
             <h1 id="title"></h1>
-            <h5> Loading... </h5>
+            <h5> ... </h5>
         </div>
     </section>
     <section class="about">
         <div class="nav">
-            <a href="" id="logo">Jeffrey <span class="txtAccent">Tsai</a>
-            <a href="projects.html" id="work"> Work</a>
+            <a href="" id="logo">Jeffrey <span class="txtAccent">Tsai
+                <span class="tooltiptext">Restart Animation</span>
+            </a>
+            <!-- <a href="index.html" id="about"> About </a> -->
+            <a href="javascript:delay('projects.html')" id="work" onclick="transition()"> Projects
+                <span class="tooltiptext">Projects</span>
+            </a>
             <a href="mailto:hello@jeffreytsai.com" id="contact">Contact</a>
-            <a href="resume.pdf" id="resume">Resumé</a>
+                <span class="tooltiptext">Email Me!</span>
+            <a href="resume.pdf" id="resume">Resumé
+                <span class="tooltiptext">View my Resumé!</span>
+            </a>
         </div>
         <div id="paragraph">
-            <h2>Hi,</h2>
-            <h2>my name is Jeffrey Tsai</h2>
+            <h2>Hi, I'm Jeffrey.</h2>
             <p>
-                I'm studying <span class = "txtAccent">Linguistics</span> and <span class = "txtAccent">Computer Science</span> at the University of Illinois. My primary focuses are <span class = "txtAccent">UI/UX Design and Web Development.</span>
+                I'm studying <span class="txtAccent">Linguistics</span> and <span class="txtAccent">Computer Science</span> at the University of Illinois. My primary focuses are <span class="txtAccent">UI/UX Design and Front-End Development.</span>
                 <span id="intern">I'm currently looking for a internship for the summer of 2019.
                 </span>
             </p>
@@ -54,5 +44,37 @@
     <script src="js/jquery-2.1.1.js"></script>
     <script src="js/main.js"></script> <!-- Resource jQuery -->
 </body>
+<script type="text/javascript">
+    var right = 10;
+    var kms = 50;
+    $(document).keydown(function(e){
+        if(e.key === "Escape"){
+            alert("escape");
+        }
+        if(e.keyCode === 37) {
+            console.log("Go left boy");
+            console.log(right);
+            right*=1.05;
+            $("#bored").css("right", right);
+        }
+        if(e.keyCode === 39) {
+            console.log("Let's go down");
+            kms+=5;
+            $("#bored").css("top",kms);
 
+
+        }
+
+
+
+    });
+
+
+
+
+
+
+
+
+</script>
 </html>

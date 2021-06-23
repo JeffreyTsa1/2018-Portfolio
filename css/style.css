@@ -4,77 +4,96 @@
 
 ----------------------- */
 
-html, body {
-  height: 100%;
+html,
+body {
+    height: 100%;
 }
 
 .intro {
-  position: relative;
-  height: 100%;
-  background-size: cover;
-  z-index: 1;
-  transition: all 0.2s linear; 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+    transition: all 0.2s linear;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
 .intro h1 {
-  max-width: 1170px;
-  width: 90%;
-  position: absolute;
-  text-transform: uppercase;
-  text-align: center;
-  padding-bottom: 18vh;
-  transition: all 0.2s ease-in-out;
-  left: 50%;
-  top: 50%;
-  bottom: auto;
-  right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+    max-width: 1170px;
+    width: 90%;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 18vh;
+    transition: all 0.2s ease-in-out;
 
-  /*** font ***/
-  color: #333;
-font-family: odisseia, sans-serif;
-  font-weight: 400;
-font-style: normal;
-  line-height: 1.8em;
-  font-size: 4em;
-  letter-spacing: 40px;
+
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    transform: translateX(-50%) translateY(-50%);
+
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -o-transform: translateX(-50%) translateY(-50%);
+
+    /*** font ***/
+    color: #333;
+    font-family: odisseia, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.8em;
+    font-size: 4em;
+    letter-spacing: 40px;
 
 }
 
 #intern {
-  color:#000;
+    color: #000;
 }
 
 .txtAccent {
-  font-weight: 800;
-  color:#2e2e2e;
+    font-weight: 800;
+    color: #2e2e2e;
 }
 
 
 #paragraph {
-  text-align: center;
-  height: 400px;
-  max-width:800px;
-  margin: 0 auto;
-  padding-top: 200px;
+    height: 400px;
+    max-width: 800px;
+    margin: 0 auto;
+    transition: all 0.15s ease-out;
+    width: 800px;
+    height: 350px;
+
+    position: absolute;
+    /*it can be fixed too*/
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    /*this to solve "the content will not be cut when the window is smaller than the content": */
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
 }
 
-#paragraph p{
-  opacity: 0;
+#paragraph p {
+    opacity: 0;
+
 }
 
 .about {
-  height:110vh;
-  background-color: #fffbed;
-  /*background-color: #110027;*/
+    background: #fffff4;
+    height: 100vh;
 }
+
 
 
 /*
@@ -82,105 +101,128 @@ font-style: normal;
 */
 
 .right {
-  transform: rotate(90deg);
+    transform: rotate(90deg);
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 h5 {
-  text-align: center;
-  margin: 0;
-  position: absolute;
-  left: 50%;
-  bottom:15px;
-  -ms-transform: translate(-50%, 0%);
-  transform: translate(-50%, 0%);
-  font-family: 'soleil','sans-serif';
-  font-weight: 400;
-  color:#666;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  transition: all 0.1s ease-in-out;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    bottom: 15px;
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+    font-family: 'soleil', 'sans-serif';
+    font-weight: 400;
+    color: #666;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    transition: all 0.1s ease-in-out;
 }
 
-#logo, #work, #contact, #resume {
-  position: fixed;
+#logo,
+#work,
+#contact,
+#resume {
+    position: fixed;
 }
 
 #logo {
-  left:20px;
-  top:20px;
-  transition: all 0.2s ease-in-out;
-  width:40px;
+    left: 20px;
+    top: 20px;
+    transition: all 0.2s ease-in-out;
 }
 
 #work {
-  top:20px;
-  right:20px;
+    top: 20px;
+    right: 20px;
 }
 
 #contact {
-  bottom:20px;
-  right:20px;
-}
-#resume {
-  bottom:20px;
-  left:20px;
+    bottom: 20px;
+    right: 20px;
 }
 
-.nav a:hover {
-  text-shadow: 1px 1px #FE624F;  
+.navpopup {
+  position: relative;
+  border-bottom: 1px dotted black; 
 }
+
+#resume {
+    bottom: 20px;
+    left: 20px;
+}
+
+#lName {
+  width:0px;
+  transition: all 0.15s ease-out;
+}
+
+/*.nav a:hover {
+    text-shadow: 1px 1px #FE624F;
+}*/
+
+#lName:hover {
+  max-width:50px;
+  opacity: 1;
+}
+
+
 .nav a {
-  color:#000;
-  font-size: 13px;
-  font-family: 'soleil', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 6px;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
+    color: #000;
+    font-size: 13px;
+    font-family: 'soleil', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
 }
 
 
 .entrance {
-  opacity: 1 !important;
+    opacity: 1 !important;
 }
 
 ::selection {
-  background:none;
-  color:#FE624F;
+    background: none;
+    color: #FE624F;
 }
 
 
 p {
-    transition: all 0.1s linear; 
-  font-weight: 400;
-  font-style: normal;
+    transition: all 0.1s linear;
+    font-weight: 400;
+    font-style: normal;
 }
 
 #paragraph p {
-  font-family: soleil, sans-serif;
-  color:#2e2e2e;
+    font-family: soleil, sans-serif;
+    color: #2e2e2e;
     line-height: 2.2em;
-  font-size: 19px;
+    font-size: 19px;
+}
+
+#paragraph h2 {
+    opacity: 0;
+    padding-bottom: 0px;
 }
 
 h2 {
-  /*color:#fdf0d1;*/
-  height:60px;
-  color:#333;
-  text-transform: uppercase;
-  font-family: Futura-PT, sans-serif;
-  letter-spacing: 10px;
-  font-weight: 700;
-  font-style: normal;
-  line-height: 1.6em;
-  transition: all 0.2s ease-in-out;
-  font-size: 44px;
-  text-align: center; 
+    height: 60px;
+    color: #333;
+    text-transform: uppercase;
+    font-family: Futura-PT, sans-serif;
+    letter-spacing: 10px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.6em;
+    transition: all 0.2s ease-in-out;
+    font-size: 44px;
 }
 
 
@@ -211,34 +253,64 @@ h2 {
 /********* MEDIA QUERY ********/
 
 @media only screen and (max-width: 1080px) {
-  .intro h1 { 
-    font-size: 3em;
-    line-height: 1em;
-  }
-  #paragraph {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+    .intro h1 {
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    #paragraph {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
 
 
 }
 
 @media only screen and (max-width: 800px) {
-  .intro h1 { 
-    font-size: 3em;
-    line-height: 1em;
-  }
-  #paragraph h2{
-    padding-left: 20px;
-    font-size: 30px; 
-    padding-right: 20px;
-  }
+    .intro h1 {
+        font-size: 3em;
+        line-height: 1em;
+    }
+
+    #paragraph h2 {
+        padding-left: 20px;
+        font-size: 30px;
+        padding-right: 20px;
+    }
 
 
 }
 
 
 
+
+/**** NavPopup ****/
+/* Tooltip container */
+
+/* Tooltip text */
+.tooltiptext {
+  border-radius: 6px;
+  text-transform: none;
+  letter-spacing: 0px;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  width: 120px;
+  text-align: center;
+  padding: 6px 0;
+  margin-left: 200px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transform: translateY(-60px);
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.nav a:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-20px);
+}
 
 
 
@@ -246,9 +318,9 @@ h2 {
     -webkit-transform: translateY(-80%);
     -ms-transform: translateY(-80%);
     transform: translateY(-80%);
-    -webkit-transition: 1s cubic-bezier(.77,0,.175,1).2s;
-    transition: 1s cubic-bezier(.77,0,.175,1).2s;
-    height:0% !important;
+    -webkit-transition: 1s cubic-bezier(.77, 0, .175, 1).2s;
+    transition: 1s cubic-bezier(.77, 0, .175, 1).2s;
+    height: 0% !important;
 }
 
 
@@ -258,9 +330,3 @@ h2 {
 ::-webkit-scrollbar {
     display: none;
 }
-
-
-
-
-
-

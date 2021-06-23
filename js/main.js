@@ -1,3 +1,11 @@
+function transition() {
+	$("#paragraph").css("opacity","0");
+}
+function delay (URL) {
+	$("#paragraph").css("opacity","0");
+    setTimeout( function() { window.location = URL }, 1000 );
+}
+
 
 function unloadScrollBars() {
     document.documentElement.style.overflow = 'hidden';  // firefox, chrome
@@ -53,12 +61,14 @@ $(window).load(function() {
 	setTimeout(function(){clearInterval(nl);},2000);
     setTimeout(function() {
         $(".intro").addClass("loaded");
-    	$(".about").addClass("appear");
     }, 4000);
+    setTimeout(function(){
+    	$("#paragraph h2").css("opacity","1");
+    },5500);
     setTimeout(function(){
     	$(".intro").css("display","none");
     	$(".about a").addClass("entrance");
     	$("#paragraph p").addClass("entrance");
-    },5500);
+    },6500);
 });
 

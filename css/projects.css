@@ -2,8 +2,8 @@
 .projects_index {
     z-index: 0;
     height: 100vh;
-    background:#fffbed;
-    transition: all 0.2s ease-in-out;
+    background:#fffff4;
+    transition: all 0.15s ease-in-out;
 }
 
 #project_text_container h2 {
@@ -11,6 +11,7 @@
 }
 
 #pContainer {
+    transition: all 0.15s ease-in;
     padding-bottom: 40px;
      position: absolute;
      margin-top: auto;
@@ -19,8 +20,8 @@
      right: 0;
      bottom: 0;
      left: 0;
-     margin-left: 100px;
-
+     margin-left: 150px;
+     opacity: 0;
      width: 600px;
      height:356px;
 }
@@ -55,7 +56,7 @@
 
 .photo-showcase img {
     padding:15px;
-        border-style: solid;
+    border-style: solid;
     border-width: 2px;
     border-color: #fdf5e6;
 }
@@ -175,7 +176,7 @@ h3 {
     transition: all 0.2s ease-in-out;
     opacity: 0;
     display: block;
-    right:50px;
+    right:100px;
     top: 50%;
     max-height: 78vh;
     margin-top: -38vh; /* Half the height */
@@ -202,6 +203,7 @@ p {
     color: #010b13;
     line-height: 34px;
     font-size: 18px;
+    padding-bottom: 25px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -212,7 +214,12 @@ h2 {
     position: absolute;
 }
 
-#close{
+#ptxt {
+    transition: all 0.15s ease-in;
+    opacity: 0;
+}
+
+#close {
     left:0;
     right:0;
     top:0;

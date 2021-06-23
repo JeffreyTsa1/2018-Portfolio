@@ -21,8 +21,8 @@
 <body>
     <section class="projects_index">
         <div class="nav">
-            <a href="index.html" id="logo">Jeffrey <span class="txtAccent">Tsai</a>
-            <a href="" id="work"> Work</a>
+            <a href="index.html" id="logo">Jeffrey<span id="lName" class="txtAccent"> Tsai</span></a>
+            <a id="work"> Work</a>
             <a href="mailto:hello@jeffreytsai.com" id="contact">Contact</a>
             <a href="resume.pdf" id="resume">Resumé</a>
         </div>
@@ -54,9 +54,15 @@
         <div class="sContainer">
             <div class="mini-section">
                 <h3>Introduction</h3>
-                <p>
-                    Hourglass was the project I worked on with my team for CS465 (User Interface and Design). The main goal of the project was to demonstrate that we, as a team, could utilize good design techniques that we had learned in the class to design a.Our team originally had different intentions for Hourglass, but due to restrictions with time and resources, we decided to focus on what we were meant to accomplish as a goal.
+                <p>Hourglass is the result of a semester-long group project for CS465 (User Interface Design). CS465 is a course that focuses on the fundamental principles of user interface design, implementation, and evaluation. The entire class is split up into small teams to work on a semester-long project that allows students to utilize the knowledge they gained in the class. Our team consisted of six engineers, including two students from our HCI masters program. 
                 </p>
+                <p>After getting familiar with one another’s skills, we began brainstorming ideas. This process took over a week, and we explored many different concepts. (One of my personal favorites was an idea to redesign Reddit’s user interface and remove all usernames and badges from Reddit. This would effectively create a more focused discussion on the topic at hand, not a very personal discussion at the users associated in the post or the subreddit). After we went through everything on our idea-list, we ended up with HourGlass. 
+                </p>
+                <p> We originally had different intentions for Hourglass. HourGlass originally tested the idea of utilizing social therapy to help combat procrastination, but due to time and resource restrictions, we decided to focus on what mattered. The main focus of the project was to demonstrate that we, as a team, could utilize what we learned in the class, so our project focused on creating an effective visualization to represent users’ online habits in a time-centric way. 
+                </p>
+                <p>Hourglass helps users understand how they spend their time online in a ‘time-centric manner’. One of the biggest things that we realized early on with these visualizations of productivity is that often times people are less distracted on one single site for a continuous amount of time. Users often feel the urge to continuously check sites, but don’t stay on sites for more than a few minutes at a time. Laying out data in a Gantt Chart allowed us to measure online website visits with a time axis. On our graph, if there were entries of small yellow lines that would repeat in patterns, it would mean that the user is distracted. The way our visualization was set up also allowed users to import their google calendar through the google calendar API. This would allow users to properly understand whether they were being productive or not. No one is expected to be completely on task 24/7 of the day, and that’s something we found difficult about many existing solutions. Often times it seemed that any sort of procrastination was prohibited on other procrastination-related applications. Our visualization allows the user a comparable unit to measure against their activity. It shouldn’t be a bad thing if users are being unproductive during a non-work hour. This promotes a secondary intention that we had with this functionality, which is to help users build habits better. Taking 5 minutes breaks every hour is completely healthy, but users don’t always stick by the schedule.
+                </p>
+
             </div>
             <!-- <h3>Introduction</h3>
         <p>
@@ -68,16 +74,16 @@
                     I accomplished a few things from my role in this project. First off, I was tasked with designing the main visualization page. The data is requested from our API and then visually graphed through d3. To create the three separate sections of the graph, I built three graphs in total. The first graph requests the user’s google calendar data and is located at the very top. The third day displays the user’s top 10 most visited sites in that day and plots out all the visits that the user may have in a day’s time. The second graph aggregates the user’s productive/unproductive time measurements throughout the day.
                 </p>
                 <div class="photo-showcase">
-                    <img src="HourGlass Design.png"  />
+                    <img src="photo1.png"  />
+                    <h6>This is a placeholder photo. </h6>
+                </div>
+                <div class="photo-showcase">
+                    <img src="HourGlassMockup.png"  />
                     <h6>My design prototype for the Distractions page. </h6>
                 </div>
                 <p>
                     For extra credit opportunities, we had to implement a few features and functionalities. The first one was to make the entire website responsive. To accomplish this on the main visualization page, I utilized media queries and allowed the user to scroll left and right so they could still view the visualization under a smaller resolution width. Other styling changes were implemented so that the settings, home, setup, and distraction pages work under different resolutions.
                 </p>
-            </div>
-            <div class="photo-showcase">
-                <img src="photo1.png"  />
-                <h6>This is a placeholder photo. </h6>
             </div>
             <br class="photo-bottom-padding"></br>
             <div class="mini-section">
@@ -97,7 +103,7 @@
                 </p>
             </div>
         </div>
-        <div id="toTop">Want to check out the next project?</div>
+        <div id="toTTM">Want to check out the next project?</div>
     </section>
 
 

@@ -33,9 +33,6 @@ $("#close").click(function(){
 	}
 });
 
-function close(){
-
-}
 
 $("#hgtxt").hover(function() {
 	if(!(ttmVis || pevVis || aaVis)){
@@ -248,3 +245,13 @@ var selection = function(classname, load){
 
 
 }
+
+
+
+$(window).load(function() {
+	setTimeout(function(){
+		$("#ptxt").css("opacity","1");
+		$("#pContainer").css("opacity","1");
+	},1000);
+	
+});
